@@ -51,5 +51,14 @@
       | Size | small |
       | weight | light weight |
 
-- [x] Based on the above details and battery specification, the best battery to choose is the Lithium-ion Battery
+- [x] Based on the above details and battery specification, the best battery to choose is the Lithium-ion battery because its provide more power and long time compare it with its price.
 
+2. **Now, lets select how many Lithium-ion batteries we need for our application which mean what is the capacity needed for the battery:**
+  - Assume the motors is 12v, 6 watt DC motor, fistly finding the current in Amp that consumed by the motor to run: 
+    > I=Power/Volt= 6/12= 0.5A (Theoritical).
+   
+  - Secondlly,finding the power hour
+    > To run 6 watt in 1 hour, 6watt*1hour= 6 Wh, and for saftey reasons multiply by 1.2 as a safety factor. So, Wh=7.2Wh.
+   
+  - Finally, to get the capacity of the battery convert Wh to Ah 
+    > P=I*V > 7.2Wh=12v*Ah > Ah=0.6Ah. So, to run a 6watt-12Volt motor for 1 hour a 0.6 Ah lithium ion battery is needed.
