@@ -62,3 +62,10 @@
    
   - Finally, to get the capacity of the battery convert Wh to Ah 
     > P=I*V > 7.2Wh=12v*Ah > Ah=0.6Ah. So, to run a 6watt-12Volt motor for 1 hour a 0.6 Ah lithium ion battery is needed.
+=================================================================
+3. **To get 12 Volt connect 4 lithium ion battery is series**
+
+   -  12V, 2400mAh Lithium ion Battery
+
+     <p align='left'><img width="30%" src="https://github.com/mo7ammed-saleh/Batteries/blob/main/Battery%20Connections.PNG"/>
+    </p>
