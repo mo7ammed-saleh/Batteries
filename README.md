@@ -74,4 +74,5 @@
     </p>
 
 4. Now, lets design the battery charging circuit:
-   
+  <p align='left'><img width="50%" src="https://github.com/mo7ammed-saleh/Batteries/blob/main/Charging%20Circuit.jpg"/>
+    </p>
