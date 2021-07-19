@@ -3,6 +3,7 @@
 
 ## Task Requirements: 
   - Battery types and selecting the best one for suppling the robot, considering the longest working time and costs criteria.
+  - Calculate the capacity needed for our application (How many mAh needed).
   - Design battery charging circuit.
 
 ## Detailed Steps:
@@ -53,7 +54,7 @@
 
 - [x] Based on the above details and battery specification, the best battery to choose is the Lithium-ion battery because its provide more power and long time compare it with its price.
 
-2. **Now, lets select how many Lithium-ion batteries we need for our application which mean what is the capacity needed for the battery:**
+2. **Now, lets select how many Lithium-ion batteries we need for our application which mean what is the capacity (mAh) needed for the battery:**
   - Assume the motors is 12v, 6 watt DC motor, fistly finding the current in Amp that consumed by the motor to run: 
     > I=Power/Volt= 6/12= 0.5A (Theoritical).
    
@@ -61,11 +62,16 @@
     > To run 6 watt in 1 hour, 6watt*1hour= 6 Wh, and for saftey reasons multiply by 1.2 as a safety factor. So, Wh=7.2Wh.
    
   - Finally, to get the capacity of the battery convert Wh to Ah 
-    > P=I*V > 7.2Wh=12v*Ah > Ah=0.6Ah. So, to run a 6watt-12Volt motor for 1 hour a 0.6 Ah lithium ion battery is needed.
+    > P=I*V > 7.2Wh=Ah*12v > Ah=0.6Ah. So, to run a 6watt-12Volt motor for 1 hour a 600 mAh lithium ion battery is needed.
+
+    **If we used L298D driver for the DC motors, from the [datasheet](https://html.alldatasheet.com/html-pdf/22440/STMICROELECTRONICS/L298N/1619/1/L298N.html) the max current can driver provide for one motor is 2A (4A for 2 motors). So, battery capacity will depend on the runing time and if we want to run the motors for 1 hour, the battery capacity needed is > 4A*1h=4Ah and since the  driver can work from 2-35v we will provide the driver with 12v as a power supply.
 =================================================================
-3. **To get 12 Volt connect 4 lithium ion battery is series**
+3. **To get 12 Volt connect 4 lithium ion battery in series**
 
    -  12V, 2400mAh Lithium ion Battery
 
      <p align='left'><img width="30%" src="https://github.com/mo7ammed-saleh/Batteries/blob/main/Battery%20Connections.PNG"/>
     </p>
+
+4. Now, lets design the battery charging circuit:
+   
