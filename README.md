@@ -64,8 +64,8 @@
   - Finally, to get the capacity of the battery convert Wh to Ah 
     > P=I*V > 7.2Wh=Ah*12v > Ah=0.6Ah. So, to run a 6watt-12Volt motor for 1 hour a 600 mAh lithium ion battery is needed.
 
-    **If we used L298D driver for the DC motors, from the [datasheet](https://html.alldatasheet.com/html-pdf/22440/STMICROELECTRONICS/L298N/1619/1/L298N.html) the max current can driver provide for one motor is 2A (4A for 2 motors). So, battery capacity will depend on the runing time and if we want to run the motors for 1 hour, the battery capacity needed is > 4A*1h=4Ah and since the  driver can work from 2-35v we will provide the driver with 12v as a power supply.
-=================================================================
+   - **If we used L298D driver for the DC motors, from the [datasheet](https://html.alldatasheet.com/html-pdf/22440/STMICROELECTRONICS/L298N/1619/1/L298N.html) the max current can driver provide for one motor is 2A (4A for 2 motors). So, battery capacity will depend on the runing time and if we want to run the motors for 1 hour, the battery capacity needed is > 4A*1h=4Ah and since the  driver can work from 2-35v we will provide the driver with 12v as a power supply.**
+=============================================================================
 3. **To get 12 Volt connect 4 lithium ion battery in series**
 
    -  12V, 2400mAh Lithium ion Battery
